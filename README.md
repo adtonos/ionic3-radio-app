@@ -19,9 +19,8 @@ Add cordova platforms android and browser
 
 ```ionic cordova platform add browser```
 
-```ionic cordova plugin add cordova-plugin-media```
-
 then run
+
 ```ionic cordova prepare --prod```
 
 serve the app by running
