@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GenreBrowserPage } from './genre-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HomePage } from './home';
 import { Media } from '@ionic-native/media';
 import { MediaStreamServiceProvider } from '../../providers/media-stream-service/media-stream-service';
 
 @NgModule({
   declarations: [
-    GenreBrowserPage
+    HomePage
   ],
   imports: [
-    IonicPageModule.forChild(GenreBrowserPage),
-    HttpClientModule
+    IonicPageModule.forChild(HomePage),
   ],
   providers:[Media,MediaStreamServiceProvider]
 })
-export class GenreBrowserPageModule {}
+export class HomePageModule {}

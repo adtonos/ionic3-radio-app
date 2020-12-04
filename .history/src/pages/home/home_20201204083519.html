@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <!-- <ion-icon name="menu"></ion-icon> -->
+        <ion-icon name="headset"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Radio Net Mobile App
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="heart"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="card-background-page">
+  <ion-grid>
+    <ion-row>
+        <ion-col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4>
+          <ion-card (tap)="streamStation(station)">
+            <img src="assets/imgs/adtonos-logo.png" />
+            <ion-card-content>
+              <ion-card-title class="card-title">{{station.name}}</ion-card-title>
+              <ion-icon [name]="_streamPaused == false ? 'pause': 'play'" item-end></ion-icon>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
