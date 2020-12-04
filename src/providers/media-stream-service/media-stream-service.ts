@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Station } from '../../app/globals/station';
 import { Media } from '@ionic-native/media';
@@ -23,7 +22,7 @@ export class MediaStreamServiceProvider {
 
   private timeout = 0;
 
-  constructor(private http: HttpClient, private media: Media, private platform: Platform) {
+  constructor(private media: Media, private platform: Platform) {
     this.httpSubscriptions = new Subscription();
     this.uSubscriptions = new Subscription();
     this.streamPause.next(this.notPlaying);
