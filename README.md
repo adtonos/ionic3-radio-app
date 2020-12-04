@@ -1,5 +1,8 @@
 # ionic3-radio-app
-Unoffical 181.FM mobile online streaming app with real time stream meta data
+A reference implementation of mobile online streaming app.
+
+# Copyright Notice
+Code based on [ionic3-radio-app](https://github.com/code-fi/ionic3-radio-app) by [Frank Owusu-Agyemang](https://github.com/code-fi) release under MIT license.
 
 ## Installation
 Create a new ionic 3 app using
@@ -20,7 +23,6 @@ Add cordova platforms android and browser
 
 then run
 ```ionic cordova prepare --prod```
-### Well done you just configured the Ionic3 Radio App
 
 serve the app by running
 
