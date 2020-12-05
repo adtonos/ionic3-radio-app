@@ -42,6 +42,8 @@
   "devDependencies": {
     "@ionic/app-scripts": "^3.2.4",
     "cordova-android": "^6.3.0",
+    "cordova-plugin-idfa": "git+https://github.com/adtonos/cordova-plugin-idfa.git",
+    "cordova-support-android-plugin": "^1.0.2",
     "typescript": "2.4.2"
   },
   "description": "An Ionic project",
@@ -54,11 +56,14 @@
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
-      "cordova-plugin-media": {}
+      "cordova-plugin-media": {},
+      "cordova-plugin-idfa": {
+        "ANDROID_PLAY_ADID_VERSION": "16.+"
+      }
     },
     "platforms": [
-      "android",
-      "browser"
+      "browser",
+      "android"
     ]
   }
 }

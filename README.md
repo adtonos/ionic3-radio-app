@@ -19,6 +19,8 @@ Add cordova platforms android and browser
 
 ```ionic cordova platform add browser```
 
+```sed -i 's/android-26/android-28/g' platforms/android/project.properties```
+
 then run
 
 ```ionic cordova prepare --prod```
